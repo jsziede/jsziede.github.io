@@ -1,0 +1,239 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #dfe6e9;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: transparent;
+  border: 0.4rem solid #dfe6e9;
+  outline: none;
+}
+
+.btn-secondary:active {
+  background: #dfe6e9 !important;
+  color: #00b894 !important;
+  box-shadow: none !important;
+  border: 0.4rem solid #dfe6e9 !important;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  background-color: #00b894;
+  background-size: cover;
+  background-position: center bottom;
+  font-family: 'Archivo', sans-serif;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #dfe6e9;
+  transition: background-color 0.7s linear;
+}
+
+.bold {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+.cover-container {
+  max-width: 70rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.cover-container::-webkit-scrollbar { 
+  width: 0;
+  height: 0;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.project {
+  height: 100vh;
+  color: #dfe6e9;
+  overflow: hidden;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.project .content {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.project .info-panel p {
+  margin: 0 !important;
+}
+
+.project .small {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.project .small i {
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 0.2rem;
+}
+
+.project h5 {
+  font-size: 2rem;
+}
+
+.project .image-display {
+  background-size: cover;
+  min-height: 12rem;
+  border-radius: .5rem;
+}
+
+#cae {
+  background-image: url(../img/cae.png);
+  background-position: center;
+}
+
+#clicker {
+  background-image: url(../img/clicker.png);
+  background-position: center;
+}
+
+#bot {
+  background-image: url(../img/bot.png);
+  background-position: center left;
+}
+
+#graph {
+  background-image: url(../img/graph.png);
+  background-position: center left;
+}
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem .3rem;
+  font-weight: 700;
+  color: #dfe6e9;
+  background-color: transparent;
+  border: .2rem solid #dfe6e9;
+  border-radius: .3rem;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: #00b894;
+  background: #dfe6e9;
+  border: .2rem solid transparent;
+  border-radius: .3rem;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #00b894;
+  background: #dfe6e9;
+  border: .2rem solid transparent;
+  border-radius: .3rem;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.rounded-circle {
+    width: 20rem;
+    height: 20rem;
+    border: solid .4rem #dfe6e9;
+    background-image: url('../img/selfie.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -1.2rem;
+    margin: .5rem auto;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .rounded-circle {
+        width: 15rem;
+        height: 15rem;
+        border: solid 4px #DDD;
+        background-position-y: center;
+    }
+
+    .cover {
+        font-size: 0.9rem;
+    }
+
+    .project {
+      height: inherit;
+      min-height: 100vh;
+    }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: #dfe6e9;
+}
